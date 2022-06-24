@@ -10,6 +10,11 @@ import mercadolibre
 
 
 class NetworkWorkerTests: XCTestCase {
+    func test_post_success_complete() async {
+        await expectResult(nil, when: (data: makeValidData(), response: nil, error: makeError()))
+    }
+    
+    
     func test_post_should_complete_with_error_when_request_completes_with_error() async {
         await expectResult(NetworkErrors.badRequest, when: (data: nil, response: nil, error: makeError()))
     }
@@ -25,7 +30,7 @@ extension NetworkWorkerTests {
 
 
 extension NetworkWorkerTests {
-    func expectResult(_ expectedResult: NetworkErrors, when stub: (data: Data?, response: HTTPURLResponse?,
+    func expectResult(_ expectedResult: NetworkErrors?, when stub: (data: Data?, response: HTTPURLResponse?,
                                                                            error: Error?), file: StaticString = #filePath, line: UInt = #line) async {
         let sut = makeSut()
         UrlProtocolStub.simulate(data: stub.data, response: stub.response, error: stub.error)
