@@ -4,19 +4,19 @@
 <dict>
 	<key>API_BASE_URL</key>
 	<string>https://api.mercadolibre.com</string>
-	<key>TOKEN</key>
-	<string>APP_USR-3715782785242398-062121-768ca87073c37211abb6e7f875196af9-199880813</string>
-	<key>SITE</key>
-	<string>MLA</string>
-	<key>GRANTTYPE</key>
-	<string>refresh_token</string>
 	<key>CLIENTID</key>
 	<string>3715782785242398</string>
 	<key>CLIENTSECRET</key>
 	<string>1Hrd3hdHlcDDBME5cv0mxSWJ2r158BiK</string>
+	<key>GRANTTYPE</key>
+	<string>refresh_token</string>
 	<key>REDIRECTURL</key>
 	<string>https://www.google.com</string>
 	<key>REFRESHTOKEN</key>
 	<string>TG-62b33b61dc53d10013c441df-199880813</string>
+	<key>SITE</key>
+	<string>MLA</string>
+	<key>TOKEN</key>
+	<string>APP_USR-3715782785242398-062121-768ca87073c37211abb6e7f875196af9-199880813</string>
 </dict>
 </plist>
